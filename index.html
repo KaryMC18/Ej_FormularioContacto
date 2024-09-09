@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
     <link rel="stylesheet" href="E6.css">
+    <script href="index.js"></script>
 </head>
 <body>
-    <div class="form-container">
+    <div class="form-container" >
         <h1>Formulario de Contacto</h1>
-        <form id="contactForm">
+        <form id="contactForm" onclick=return validar()>
             <div class="form-group">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
@@ -25,10 +26,9 @@
                 <textarea id="message" name="message" placeholder="Escribe tu mensaje"></textarea>
                 <span class="error-message" id="messageError"></span>
             </div>
-            <button type="submit">Enviar</button>
+            <button>Enviar</button>
         </form>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
